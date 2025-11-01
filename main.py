@@ -75,7 +75,7 @@ async def test(ctx, arg):
 
 
 # Slash Commands
-@bot.tree.command(name='FFFF', description='Replies with kuy')
+@bot.tree.command(name='ffff', description='Replies with kuy')
 async def hellocommand(interaction):
     await interaction.response.send_message("guf")
 
@@ -117,4 +117,5 @@ server_on()
 
 
 bot.run(os.getenv('TOKEN'))
+
 
