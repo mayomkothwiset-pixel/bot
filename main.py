@@ -85,20 +85,6 @@ async def hellocommand(interaction):
 async def namecommand(interaction, name : str):
     await interaction.response.send_message(f"Hello {name}")
 
-@bot.event
-async def on_message(message):
-     mes = message.content 
-     it mes == 'hello':
-         await message.channel.send("Hello It's me")
-     
-    elif mes == 'hi bot':
-        await message.channel.send("Hello," + str(message.author.name))
-    
-    await bot.process_commands(message)
-
-@bot.command()
-async daf hello(ctx):
-     await ctx.send(f"hello {ctx. author.name}!")
 
 
 # Embeds
@@ -132,6 +118,7 @@ server_on()
 
 
 bot.run(os.getenv('TOKEN'))
+
 
 
 
