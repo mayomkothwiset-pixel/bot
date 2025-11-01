@@ -98,7 +98,7 @@ async def helpcommand(interaction):
 
     # ใส่ข้อมูล
     emmbed.add_field(name='/hello1', value='Hello Commmand', inline=True)
-    emmbed.add_field(name='/hello2', value='Hello Commmand', inline=True)
+    emmbed.add_field(name='/ping', value='EARTH', inline=True)
     emmbed.add_field(name='/hello3', value='Hello Commmand', inline=False)
 
     emmbed.set_author(name='Author', url='https://www.youtube.com/@maoloop01/channels', icon_url='https://yt3.googleusercontent.com/0qFq3tGT6LVyfLtZc-WCXcV9YyEFQ0M9U5W8qDe36j2xBTN34CJ20dZYQHmBz6aXASmttHI=s900-c-k-c0x00ffffff-no-rj')
@@ -114,5 +114,6 @@ async def helpcommand(interaction):
 
 
 server_on()
+
 
 bot.run(os.getenv('TOKEN'))
