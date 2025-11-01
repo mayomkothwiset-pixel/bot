@@ -50,7 +50,7 @@ async def on_member_remove(member):
 async def on_message(message):
     mes = message.content # ดึงข้อความที่ถูกส่งมา
     if mes == 'f':
-        await message.channel.send("ว่าไงไอน้อง") # ส่งกลับไปที่ห้องนั่น
+        await message.channel.send("ควยเอิท") # ส่งกลับไปที่ห้องนั่น
 
     elif mes == 'hi bot':
         await message.channel.send("Hello, " + str(message.author.name))
@@ -118,6 +118,7 @@ server_on()
 
 
 bot.run(os.getenv('TOKEN'))
+
 
 
 
